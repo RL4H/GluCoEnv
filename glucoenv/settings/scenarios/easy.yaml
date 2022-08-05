@@ -1,0 +1,10 @@
+# Easy Meal Scenario
+# Low CHO content, No snacks.
+meal_protocol:
+  probability: [0.95, -1, 0.95, -1, 0.95, -1]  # [0,1], can meal
+  amount_mu: [30, 0, 60, 0, 70, 0]  # meal mu, sigma in grams.
+  amount_sigma: [10, 5, 10, 5, 10, 5]
+  time_lower_bound: [5, 9, 10, 14, 16, 20]  # times are in 24-hour format
+  time_upper_bound: [9, 10, 14, 16, 20, 23]
+  time_mu: [7, 9.5, 12, 15, 18, 21.5]
+  time_sigma: [60, 30, 60, 30, 60, 30] # minutes

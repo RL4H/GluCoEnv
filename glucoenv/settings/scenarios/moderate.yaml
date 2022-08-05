@@ -1,0 +1,8 @@
+meal_protocol:  # Global Meal Scenario, applicable when individuals meals are not assigned.
+  probability: [0.95, 0.3, 0.95, 0.3, 0.95, 0.3]  # [0,1], can meal
+  amount_mu: [45, 10, 70, 10, 80, 10]  # meal mu, sigma in grams.
+  amount_sigma: [10, 5, 10, 5, 10, 5]
+  time_lower_bound: [5, 9, 10, 14, 16, 20]  # times are in 24-hour format
+  time_upper_bound: [9, 10, 14, 16, 20, 23]
+  time_mu: [7, 9.5, 12, 15, 18, 21.5]
+  time_sigma: [60, 30, 60, 30, 60, 30] # minutes

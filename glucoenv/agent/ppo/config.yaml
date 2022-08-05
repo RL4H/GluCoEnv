@@ -1,0 +1,32 @@
+---
+verbose: True
+n_step: 256
+n_features: 2
+feature_history: 12
+batch_size: 1024
+pi_lr: 0.0003
+vf_lr: 0.0003
+n_vf_epochs: 5
+n_pi_epochs: 5
+entropy_coef: 0.001
+eps_clip: 0.1
+target_kl: 0.01
+grad_clip: 20
+
+action_type: 'exponential'
+action_scale: 5
+
+# used in the rollout buffer
+return_type: 'average'  # average or discount
+gamma: 1 #0.99  # should be 1 if average
+lambda_: 1 #0.95  # should be 1 if average
+shuffle_rollout: True
+normalize_reward: True
+
+# used for the NN model
+n_action: 1
+n_hidden: 16
+n_rnn_layers: 1
+rnn_directions: 1
+bidirectional: False
+
