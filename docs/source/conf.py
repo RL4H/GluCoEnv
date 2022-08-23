@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'GluCoEnv'
+copyright = '2022, Chirath Hettiarachchi'
+author = 'Chirath Hettiarachchi'
 
 release = '0.1'
 version = '0.1.0'
