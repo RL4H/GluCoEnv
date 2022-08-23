@@ -172,10 +172,13 @@ RL-based systems, I have designed are hosted there, which provides you the abili
 ### Citing
 ```
 @misc{hettiarachchi2022glucoenv,
-  title={GluCoEnv v0.1.0(2022)},
-  author={Hettiarachchi, Chirath},
-  journal={Accessed on: August 5th, 2022. [Online] Available: https://github.com/chirathyh/GluCoEnv},
-}
+     author={Hettiarachchi, Chirath},
+     title={GluCoEnv v0.1.0(2022)},
+     year = {2022},
+     publisher = {GitHub},
+     journal = {GitHub repository},
+     howpublished = {\url{https://github.com/chirathyh/GluCoEnv}},
+   }
 ```
 
 ### Reporting Issues, Feature Requests & Contributing to the project
