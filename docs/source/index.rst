@@ -51,6 +51,7 @@ Contents
    
    algo/sbb
    algo/ppo
+   algo/G2P2C
 
 Learn More 
 --------
