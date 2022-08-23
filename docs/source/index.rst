@@ -51,7 +51,7 @@ Contents
    
 .. toctree::
    :maxdepth: 2
-   :caption: RL Algorithms
+   :caption: Control Algorithms
    
    algo/sbb
    algo/ppo
