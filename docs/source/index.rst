@@ -44,6 +44,7 @@ Contents
    guide/benchmark
    guide/metrics
    guide/visualisation
+   guide/resources
    
    
 .. toctree::
