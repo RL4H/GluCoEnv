@@ -5,7 +5,9 @@ Environment
 
 The environment represents the glucoregulatory system of a person with type 1 diabetes. In GluCoEnv, you parallelise environments, which can be used to run multiple workers for a single environment or multiple experiments with multiple workers. 
 
-Environments can be created using provided API and through a custom config.yaml file where greater flexibility is possible. 
+Environments can be created using provided API and through a custom config.yaml file where greater flexibility is possible. The standard API provide standardised settings to train RL algorithms and encouraged for benchmark purposes. The settings related to aspects such as the meal protocol for the simulation (carbohydrate content, time, probability of occurence), glucose sensor and insulin pump used, type 1 diabetes patient name, simulation start time etc..
+
+Using standard API,
 
 .. code-block:: python 
 
