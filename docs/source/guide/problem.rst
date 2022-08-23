@@ -1,6 +1,6 @@
 .. _problem:
 
-Glucose Control Problem
+Task - Glucose Control 
 ============
 
 Type 1 Diabetes (T1D)
