@@ -65,6 +65,7 @@ RL-based systems, I have designed are hosted there, which provides you the abili
 Citing GluCoEnv
 --------
 To cite this project in publications:
+
 .. code-block:: bibtex
    @misc{hettiarachchi2022glucoenv,
      author={Hettiarachchi, Chirath},
