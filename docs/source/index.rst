@@ -1,4 +1,7 @@
 .. _Simglucose: https://github.com/jxx123/simglucose
+.. _CAPSML: http://capsml.com/
+.. _torchdiffeq: https://github.com/rtqichen/torchdiffeq
+.. _torchcubicspline: https://github.com/patrick-kidger/torchcubicspline
 
 Welcome to GluCoEnv documentation!
 ===================================
@@ -19,7 +22,7 @@ Research related to RL-based glucose control systems are relatively minimal comp
 
 The key highlights of **GluCoEnv** are the vectorized parallel environments designed to run on a GPU and the flexibility to develop RL-based algorithms for glucose control and benchmarking. The problem also lacks proper benchmarking scenarios and controllers, which have been implemented in this environment to provide some guidance on the task.
 
-You can find more details and our RL-based glucose control algorithms by visiting the project [**CAPSML**](https://github.com/jxx123/simglucose).
+You can find more details and our RL-based glucose control algorithms by visiting the project `CAPSML`_.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -56,7 +59,7 @@ Contents
 Learn More 
 --------
 
-You can learn more about RL-based glucose control by visiting the project [website](https://github.com/jxx123/simglucose).
+You can learn more about RL-based glucose control by visiting the project `CAPSML`_.
 RL-based systems, I have designed are hosted there, which provides you the ability to simulate for your own custom scenarios.
 
 Citing GluCoEnv
@@ -75,8 +78,8 @@ To cite this project in publications:
 Acknowledgement
 --------
 
-The UVA/Padova model made it possible to design / develop control systems for glucose regulation in Type 1 Diabetes, in an in-silico manner. However, it was designed for the Matlab framework. The development of the [Simglucose](https://github.com/jxx123/simglucose) simulator by Jinyu Xie, has been a very valuable contribution to research for the development of Reinforcement Learning based control systems. I would like to thank everyone behind all these efforts.
+The UVA/Padova model made it possible to design / develop control systems for glucose regulation in Type 1 Diabetes, in an in-silico manner. However, it was designed for the Matlab framework. The development of the `Simglucose`_ simulator by Jinyu Xie, has been a very valuable contribution to research for the development of Reinforcement Learning based control systems. I would like to thank everyone behind all these efforts.
 
-The open-source community projects Python, PyTorch, [torchdiffeq](https://github.com/rtqichen/torchdiffeq), [torchcubicspline](https://github.com/patrick-kidger/torchcubicspline) was heavily used in this work. I thank all the developers behind these projects, the Stack Overflow, PyTorch communities who have been very helpful the development of this work.  
+The open-source community projects Python, PyTorch, `torchdiffeq`_, `torchcubicspline`_ was heavily used in this work. I thank all the developers behind these projects, the Stack Overflow, PyTorch communities who have been very helpful the development of this work.  
 
 This project initiated as a hobby project of Chirath Hettiarachchi, who is currently a PhD student whose research is funded by the Australian National University and the Our Health in Our Hands initiative; and by the National Computational Infrastructure (NCI Australia), and NCRIS enabled capability supported by the Australian Government. 
