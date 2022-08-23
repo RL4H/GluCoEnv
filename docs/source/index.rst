@@ -51,3 +51,28 @@ Contents
    algo/sbb
    algo/ppo
 
+Learn More 
+--------
+
+You can learn more about RL-based glucose control by visiting the project [website](https://github.com/jxx123/simglucose).
+RL-based systems, I have designed are hosted there, which provides you the ability to simulate for your own custom scenarios.
+
+Citing
+--------
+
+```
+@misc{hettiarachchi2022glucoenv,
+  title={GluCoEnv v0.1.0(2022)},
+  author={Hettiarachchi, Chirath},
+  journal={Accessed on: August 5th, 2022. [Online] Available: https://github.com/chirathyh/GluCoEnv},
+}
+```
+
+Acknowledgement
+--------
+
+The UVA/Padova model made it possible to design / develop control systems for glucose regulation in Type 1 Diabetes, in an in-silico manner. However, it was designed for the Matlab framework. The development of the [Simglucose](https://github.com/jxx123/simglucose) simulator by Jinyu Xie, has been a very valuable contribution to research for the development of Reinforcement Learning based control systems. I would like to thank everyone behind all these efforts.
+
+The open-source community projects Python, PyTorch, [torchdiffeq](https://github.com/rtqichen/torchdiffeq), [torchcubicspline](https://github.com/patrick-kidger/torchcubicspline) was heavily used in this work. I thank all the developers behind these projects, the Stack Overflow, PyTorch communities who have been very helpful the development of this work.  
+
+This project initiated as a hobby project of Chirath Hettiarachchi, who is currently a PhD student whose research is funded by the Australian National University and the Our Health in Our Hands initiative; and by the National Computational Infrastructure (NCI Australia), and NCRIS enabled capability supported by the Australian Government. 
