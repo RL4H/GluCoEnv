@@ -23,7 +23,7 @@ Research related to RL-based glucose control systems are relatively minimal comp
 
 The key highlights of **GluCoEnv** are the vectorized parallel environments designed to run on a GPU and the flexibility to develop RL-based algorithms for glucose control and benchmarking. The problem also lacks proper benchmarking scenarios and controllers, which have been implemented in this environment to provide some guidance on the task.
 
-You can find more details and our RL-based glucose control algorithms by visiting the project [**CAPSML**](https://github.com/jxx123/simglucose).
+You can find more details and our RL-based glucose control algorithms by visiting the project [**CAPSML**](http://capsml.com/).
 
 **This project is under active development, where additional glucose dynamics models, clinical metrics, RL algorithms, and visualisation tools will be introduced.**
 
@@ -165,7 +165,7 @@ patients:
 A benchmark controller based on Standard Basal Bolus (SBB) clinical treatment strategy is replicated along with pre-defines simulation protocols. A model which simulates the human error in carbohydrate estimation is also implemented.
 
 ### Learn More 
-You can learn more about RL-based glucose control by visiting the project [website](https://github.com/jxx123/simglucose).
+You can learn more about RL-based glucose control by visiting the project [website](http://capsml.com/).
 RL-based systems, I have designed are hosted there, which provides you the ability to simulate for your own custom scenarios.
 
 
