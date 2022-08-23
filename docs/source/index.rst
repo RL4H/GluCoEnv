@@ -57,16 +57,15 @@ Learn More
 You can learn more about RL-based glucose control by visiting the project [website](https://github.com/jxx123/simglucose).
 RL-based systems, I have designed are hosted there, which provides you the ability to simulate for your own custom scenarios.
 
-Citing
+Citing GluCoEnv
 --------
-
-```
-@misc{hettiarachchi2022glucoenv,
-  title={GluCoEnv v0.1.0(2022)},
-  author={Hettiarachchi, Chirath},
-  journal={Accessed on: August 5th, 2022. [Online] Available: https://github.com/chirathyh/GluCoEnv},
-}
-```
+To cite this project in publications:
+.. code-block:: bibtex
+   @misc{hettiarachchi2022glucoenv,
+     title={GluCoEnv v0.1.0(2022)},
+     author={Hettiarachchi, Chirath},
+     journal={Accessed on: August 5th, 2022. [Online] Available: https://github.com/chirathyh/GluCoEnv},
+   }
 
 Acknowledgement
 --------
