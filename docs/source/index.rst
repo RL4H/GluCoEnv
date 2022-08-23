@@ -38,6 +38,7 @@ Contents
    guid/env
    guide/example
    guide/benchmark
+   guide/metrics
    
    
 .. toctree::
