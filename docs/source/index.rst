@@ -2,6 +2,8 @@ Welcome to GluCoEnv documentation!
 ===================================
 
 .. image:: _static/img/glucoenv.png
+   :width: 477
+   :alt: GluCoEnv
 
 **GluCoEnv - Glucose Control Environment** is a simulation environment which aims to facilitate the development of Reinforcement Learning based Artificial Pancreas Systems for Glucose Control in Type 1 Diabetes. 
 
