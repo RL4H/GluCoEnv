@@ -62,9 +62,12 @@ Citing GluCoEnv
 To cite this project in publications:
 .. code-block:: bibtex
    @misc{hettiarachchi2022glucoenv,
-     title={GluCoEnv v0.1.0(2022)},
      author={Hettiarachchi, Chirath},
-     journal={Accessed on: August 5th, 2022. [Online] Available: https://github.com/chirathyh/GluCoEnv},
+     title={GluCoEnv v0.1.0(2022)},
+     year = {2022},
+     publisher = {GitHub},
+     journal = {GitHub repository},
+     howpublished = {\url{https://github.com/chirathyh/GluCoEnv}},
    }
 
 Acknowledgement
