@@ -43,6 +43,7 @@ Contents
    guide/reward
    guide/benchmark
    guide/metrics
+   guide/visualisation
    
    
 .. toctree::
