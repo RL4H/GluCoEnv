@@ -37,11 +37,10 @@ Contents
    
    guide/install
    guide/problem
+   guid/env
    guide/state
    guide/action
    guide/reward
-   guid/env
-   guide/example
    guide/benchmark
    guide/metrics
    
