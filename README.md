@@ -159,7 +159,7 @@ patients:
       time_sigma: [ 60, 30, 60, 30, 60, 30 ]
 ```
 ### Documentation
-**The documentation for the project will be completed soon.**
+[Documentation](https://glucoenv.readthedocs.io/en/latest/index.html)
 
 ### Benchmark
 A benchmark controller based on Standard Basal Bolus (SBB) clinical treatment strategy is replicated along with pre-defines simulation protocols. A model which simulates the human error in carbohydrate estimation is also implemented.
