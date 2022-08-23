@@ -67,6 +67,7 @@ Citing GluCoEnv
 To cite this project in publications:
 
 .. code-block:: bibtex
+
    @misc{hettiarachchi2022glucoenv,
      author={Hettiarachchi, Chirath},
      title={GluCoEnv v0.1.0(2022)},
