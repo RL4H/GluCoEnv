@@ -27,6 +27,23 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
+   :caption: User Guide
+   
+   guide/install
+   guide/problem
+   guide/state
+   guide/action
+   guide/reward
+   guid/env
+   guide/example
+   guide/benchmark
+   
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: RL Algorithms
+   
+   algo/sbb
+   algo/ppo
 
-   usage
-   api
