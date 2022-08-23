@@ -81,6 +81,7 @@ Upon the conclusion of the simulation the glucose and insulin trajectories can b
   render(mem, env_ids=[0])  # provide the id's of the required graphs,
 
 **Running RL Algorithms (e.g., PPO)**
+
 A basic PPO algorithm is implemented in the project. The parameters of the PPO algorithm can be provided through a yaml file, and results will be saved in the target folder under the "results" directory of the project.
 
 .. code-block:: python 
