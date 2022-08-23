@@ -1,4 +1,4 @@
 .. _visualisation:
 
-visualisation
+Visualisation
 ------------
