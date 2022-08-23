@@ -1,6 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
+import os
 
 project = 'GluCoEnv'
 copyright = '2022, Chirath Hettiarachchi'
@@ -28,7 +29,13 @@ intersphinx_disabled_domains = ['std']
 templates_path = ['_templates']
 
 # -- Options for HTML output
-html_theme = 'sphinx_rtd_theme'
+# html_theme = 'sphinx_rtd_theme'
+on_rtd = os.environ.get('READTHEDOCS') == 'True'
+if on_rtd:
+    html_theme = 'default'
+else:
+    html_theme = 'sphinx_rtd_theme'
+    
 html_static_path = ['_static']
 html_logo = "_static/img/logo_white.png"
 html_theme_options = {
