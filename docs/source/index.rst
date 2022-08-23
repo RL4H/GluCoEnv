@@ -37,7 +37,7 @@ Contents
    
    guide/install
    guide/problem
-   guid/env
+   guid/environment
    guide/state
    guide/action
    guide/reward
