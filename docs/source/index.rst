@@ -24,7 +24,7 @@ The key highlights of **GluCoEnv** are the vectorized parallel environments desi
 
 You can find more details and our RL-based glucose control algorithms by visiting the project `CAPSML`_.
 
-.. note::
+.. warning::
 
    This project is under active development.
 
