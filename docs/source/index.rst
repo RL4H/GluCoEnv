@@ -1,11 +1,7 @@
 Welcome to GluCoEnv documentation!
 ===================================
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/chirathyh/chirathyh.github.io/main/images/glucoenv.png" alt="GluCoEnv" width="477"/>
-</p>
-
-<div align="center">
+.. image:: "https://raw.githubusercontent.com/chirathyh/chirathyh.github.io/main/images/glucoenv.png"
 
 ---
 
