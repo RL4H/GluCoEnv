@@ -9,7 +9,7 @@
 
 **GluCoEnv - Glucose Control Environment** is a simulation environment which aims to facilitate the development of Reinforcement Learning based Artificial Pancreas Systems for Glucose Control in Type 1 Diabetes. 
 
-![license](https://img.shields.io/apm/l/vim-mode)
+![license](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
 [![python_sup](https://img.shields.io/badge/python-3.8-black.svg?)](https://www.python.org/downloads/release/python-380/)
 [![capsml](https://img.shields.io/badge/Web-CAPSML-red)](http://capsml.com/)
 [![twitter](https://img.shields.io/twitter/follow/chirathyh?style=social)](https://twitter.com/chirathyh)
