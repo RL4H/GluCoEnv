@@ -180,6 +180,14 @@ RL-based systems, I have designed are hosted there, which provides you the abili
      howpublished = {\url{https://github.com/chirathyh/GluCoEnv}},
    }
 ```
+```
+@article{hettiarachchi2023reinforcement,
+  title={Reinforcement Learning-based Artificial Pancreas Systems to Automate Treatment in Type 1 Diabetes},
+  author={Hettiarachchi, Chirath},
+  year={2023},
+  publisher={The Australian National University}
+}
+```
 
 ### Reporting Issues, Feature Requests & Contributing to the project
 Please contact Chirath Hettiarachchi (chirath.hettiarachchi@anu.edu.au) for reporting issues or contributing to the project. Your thoughts & comments are welcome, which will be valuable towards the research in this domain.
