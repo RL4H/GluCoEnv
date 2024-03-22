@@ -13,6 +13,7 @@
 [![python_sup](https://img.shields.io/badge/python-3.8-black.svg?)](https://www.python.org/downloads/release/python-380/)
 [![capsml](https://img.shields.io/badge/Web-CAPSML-red)](https://capsml.com/)
 [![twitter](https://img.shields.io/twitter/follow/chirathyh?style=social)](https://twitter.com/chirathyh)
+[![DOI](https://img.shields.io/badge/DOI-10.25911/CXAQ--3151-blue)](http://hdl.handle.net/1885/305591)
 </div>
 
 ---
