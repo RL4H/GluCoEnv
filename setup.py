@@ -5,9 +5,10 @@ setup(
     version='0.1.0',
     packages=['glucoenv', 'glucoenv.env', 'glucoenv.agent', 'glucoenv.visualiser'],
     install_requires=[
-            'pandas==1.3.4',
+            'PyYAML=6.0.1',
+            'pandas==2.2.1',
             'numpy==1.26.3',
-            'matplotlib==3.5.0',
+            'matplotlib==3.8.3',
             'torch==2.2.0+cu118',
             'torchaudio==2.2.0+cu118',
             'torchvision==0.17.0+cu118',
