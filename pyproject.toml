@@ -3,6 +3,6 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "GluCoEnv"
+name = "glucoenv"
 authors = [{name = "Chirath", email = "chirathyh@gmail.com"}]
 dynamic = ["version", "description"]
