@@ -9,7 +9,6 @@ setup(
             'pandas==2.2.1',
             'numpy==1.26.3',
             'matplotlib==3.8.3',
-            --find-links https://download.pytorch.org/whl/torch_stable.html
             'torch==2.2.0+cu118',
             'torchaudio==2.2.0+cu118',
             'torchvision==0.17.0+cu118',
