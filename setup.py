@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='glucoenv',
-    version='0.1.0',
+    __version__='0.1.0',
     packages=['glucoenv', 'glucoenv.env', 'glucoenv.agent', 'glucoenv.visualiser'],
     install_requires=[
             'PyYAML=6.0.1',
