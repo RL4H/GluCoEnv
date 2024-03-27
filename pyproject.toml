@@ -5,7 +5,7 @@ build-backend = "flit_core.buildapi"
 [project]
 name = "glucoenv"
 authors = [{name = "Chirath", email = "chirathyh@gmail.com"}]
-dynamic = ["version"]
+dynamic = ["version", "description"]
 
 [tool.setuptools.dynamic]
 version = {attr = "package.__version__"}
