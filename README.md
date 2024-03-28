@@ -28,7 +28,7 @@ You can find more details and our RL-based glucose control algorithms by visitin
 **This project is under active development, where additional glucose dynamics models, clinical metrics, RL algorithms, and visualisation tools will be introduced.**
 
 ### Installation & Dependencies
-Create a Python 3.8.0 virtual environemnt and install PyTorch 1.12.0 with CUDA 11.3.
+Create a Python 3.10.12 virtual environemnt and install PyTorch 2.2.0.
 ```
 python3 -m venv env
 source env/bin/activate
