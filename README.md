@@ -10,9 +10,8 @@
 **GluCoEnv - Glucose Control Environment** is a simulation environment which aims to facilitate the development of Reinforcement Learning based Artificial Pancreas Systems for Glucose Control in Type 1 Diabetes. 
 
 ![license](https://img.shields.io/badge/License-MIT-yellow.svg)
-[![python_sup](https://img.shields.io/badge/python-3.8-black.svg?)](https://www.python.org/downloads/release/python-380/)
+[![python_sup](https://img.shields.io/badge/python-3.10.12-black.svg?)](https://www.python.org/downloads/release/python-31012/)
 [![capsml](https://img.shields.io/badge/Web-CAPSML-red)](https://capsml.com/)
-[![twitter](https://img.shields.io/twitter/follow/chirathyh?style=social)](https://twitter.com/chirathyh)
 [![DOI](https://img.shields.io/badge/DOI-10.25911/CXAQ--3151-blue)](http://hdl.handle.net/1885/305591)
 </div>
 
@@ -29,7 +28,7 @@ You can find more details and our RL-based glucose control algorithms by visitin
 **This project is under active development, where additional glucose dynamics models, clinical metrics, RL algorithms, and visualisation tools will be introduced.**
 
 ### Installation & Dependencies
-Create a Python 3.8.0 virtual environemnt and install PyTorch 1.12.0 with CUDA 11.3.
+Create a Python 3.10.12 virtual environemnt and install PyTorch 2.2.0.
 ```
 python3 -m venv env
 source env/bin/activate
