@@ -30,6 +30,8 @@ class PPO:
         self.batch_size = args.batch_size
 
         self.counter = torch.zeros(1, device=self.device)
+        self.t_sim = 0.0
+        self.interactions = 0.0
 
         self.policy = ActorCritic(args).to(self.device)
         self.value_criterion = nn.MSELoss()
@@ -41,11 +43,12 @@ class PPO:
         self._last_obs = scale_observations(init_obs, [self.env.sensor.min(), 0],
                                             [self.env.sensor.max(), self.args.action_scale])
 
-        self.save_log([['policy_grad', 'value_grad', 'val_loss', 'exp_var', 'true_var', 'pi_loss', 'epi_rew']], '/training_logs')
-        self.training_logs = torch.zeros(7, device=self.device)
+        self.save_log([['policy_grad', 'value_grad', 'val_loss', 'exp_var', 'true_var', 'pi_loss',
+                        'epi_rew', 't_sim', 't_update', 'interactions']], '/training_logs')
+        self.training_logs = torch.zeros(10, device=self.device)
 
         if self.args.verbose:
-            print('Policy Network Parameters: {}'.format(
+            print('\nPolicy Network Parameters: {}'.format(
                 sum(p.numel() for p in self.policy.Actor.parameters() if p.requires_grad)))
             print('Value Network Parameters: {}'.format(
                 sum(p.numel() for p in self.policy.Critic.parameters() if p.requires_grad)))
@@ -143,11 +146,15 @@ class PPO:
         return value_grad / val_count, val_loss_log, explained_var / val_count, true_var / val_count
 
     def train(self, data):
+        tstart_update = time.perf_counter()
         self.training_logs[0], self.training_logs[5] = self.train_pi(data)
         self.training_logs[1], self.training_logs[2], self.training_logs[3], self.training_logs[4] = self.train_vf(data)
         test_rew = self.evaluate(total_timesteps=288)
         print('the test reward: ', test_rew)
         self.training_logs[6] = test_rew
+        self.training_logs[7] = self.t_sim
+        self.training_logs[8] = time.perf_counter() - tstart_update
+        self.training_logs[9] = self.interactions
         self.save_log([self.training_logs.detach().cpu().flatten().numpy()], '/training_logs')
 
     def decay_lr(self):
@@ -160,8 +167,10 @@ class PPO:
             param_group['lr'] = self.vf_lr
 
     def learn(self, total_timesteps=800000):
+        tstart = time.perf_counter()
         tot_steps, new_obs, dones = 0, 0, 0
         while tot_steps < total_timesteps:
+            tstart_sim = time.perf_counter()
             for i in range(0, self.n_step):  # run rollout
                 with torch.no_grad():
                     rl_actions, values, log_probs = self.policy.get_action(self._last_obs)
@@ -176,8 +185,14 @@ class PPO:
             with torch.no_grad():
                 final_val = self.policy.get_final_value(new_obs)  # todo - update done
             data = self.rollout_buffer.prepare_rollout_buffer(final_val, dones)
-            self.train(data)  # update
             tot_steps += (self.n_env * self.n_step)
+            self.interactions = tot_steps
+            self.t_sim = time.perf_counter() - tstart_sim
+            print('\n-----------------------------------------------------')
+            print('Training Progress: {:.2f}%, Elapsed time: {:.4f} minutes.'.format(min(100.00, (tot_steps/total_timesteps)*100),
+                                                                                     (time.perf_counter() - tstart)/60))
+            self.train(data)  # update
+            print('-----------------------------------------------------')
 
             # reset env every 5 iterations
             self.counter += 1

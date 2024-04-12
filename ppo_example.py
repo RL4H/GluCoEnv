@@ -15,7 +15,7 @@ if __name__ == '__main__':
     env = T1DEnv.make(env='adolescent#001', n_env=2, env_type='train', obs_type='past_history', scenario='moderate', device='cpu')
     eval_env = T1DEnv.make(env='adolescent#001', n_env=2, env_type='eval', obs_type='past_history', scenario='moderate', device='cpu')
     model = PPO(args=ppo_args, env=env, eval_env=eval_env, device='cpu')
-    model.learn(total_timesteps=500000)
+    model.learn(total_timesteps=2000)
 
 
 

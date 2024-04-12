@@ -30,5 +30,6 @@ def load_args(FILE, folder_id):
     ppo_args = Yaml2Args(d)
     dir = setup_experiment_folders(folder_id)
     ppo_args.update({'experiment_dir': dir})
+    print('\nExperiment parameters:')
     print(vars(ppo_args))
     return ppo_args
