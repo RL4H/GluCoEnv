@@ -5,7 +5,7 @@ setup(
     version='0.1.0',
     packages=['glucoenv', 'glucoenv.env', 'glucoenv.agent', 'glucoenv.visualiser'],
     install_requires=[
-            'PyYAML=6.0.1',
+            'PyYAML==6.0.1',
             'pandas==2.2.1',
             'numpy==1.26.3',
             'matplotlib==3.8.3',

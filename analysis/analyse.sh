@@ -11,8 +11,11 @@
 #PBS -o out_ppo0.txt
 #PBS -e err_ppo0.txt
 #PBS -l software=python
-module load python3/3.9.2
-module load pytorch/1.9.0
 
-python3 /scratch/ny83/ch9972/ppo_example.py --env adolescent#001 --n_env 2 --d_env cpu --d_agent cpu
+python /scratch/ny83/ch9972/ppo_example.py --env adolescent#001 --n_env 2 --d_env cpu --d_agent cpu --folder_id cpucpu &
+python /scratch/ny83/ch9972/ppo_example.py --env adolescent#001 --n_env 2 --d_env cuda:0 --d_agent cuda:0 --folder_id cudacuda &
+python /scratch/ny83/ch9972/ppo_example.py --env adolescent#001 --n_env 2 --d_env cpu --d_agent cuda:0 --folder_id cpucuda
 wait
+
+
+

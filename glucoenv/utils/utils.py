@@ -16,19 +16,22 @@ def load_yaml(FILE):
     return yaml.safe_load(stream)
 
 
-def setup_experiment_folders(folder_id):
-    LOG_DIR = 'results/' + folder_id
-    CHECK_FOLDER = os.path.isdir(LOG_DIR)
-    if CHECK_FOLDER:
-        shutil.rmtree(LOG_DIR)
+def setup_experiment_folders(folder_id_or_path, path=False):
+    if path:
+        LOG_DIR = folder_id_or_path
+    else:
+        LOG_DIR = 'results/' + folder_id_or_path
+        CHECK_FOLDER = os.path.isdir(LOG_DIR)
+        if CHECK_FOLDER:
+            shutil.rmtree(LOG_DIR)
     os.makedirs(LOG_DIR)
     return LOG_DIR
 
 
-def load_args(FILE, folder_id):
+def load_args(FILE, folder_id, path):
     d = load_yaml(FILE=FILE)
     ppo_args = Yaml2Args(d)
-    dir = setup_experiment_folders(folder_id)
+    dir = setup_experiment_folders(folder_id, path)
     ppo_args.update({'experiment_dir': dir})
     print('\nExperiment parameters:')
     print(vars(ppo_args))
