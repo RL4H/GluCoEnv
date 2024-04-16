@@ -14,9 +14,10 @@ parser.add_argument('--d_agent', type=str, default='cpu')
 args = parser.parse_args()
 
 #'adolescent#001'
+PATH = '/scratch/ny83/ch9972/pytorch-env/GluCoEnv/'
 
 if __name__ == '__main__':
-    ppo_args = load_args(FILE='../glucoenv/agent/ppo/config.yaml', folder_id='test123')
+    ppo_args = load_args(FILE=PATH+'glucoenv/agent/ppo/config.yaml', folder_id=PATH+'results/'+ args.folder_id, path=True)
     env = T1DEnv.make(env=args.env, n_env=args.n_env, env_type='train', obs_type='past_history', scenario='moderate', device=args.d_env)
     eval_env = T1DEnv.make(env=args.env, n_env=args.n_env, env_type='eval', obs_type='past_history', scenario='moderate', device=args.d_env)
     model = PPO(args=ppo_args, env=env, eval_env=eval_env, device=args.d_agent)
