@@ -16,7 +16,7 @@ module load cuda/12.3.2
 module load python3/3.12.1
 source /scratch/ny83/ch9972/pytorch-env/bin/activate
 
-python3 /scratch/ny83/ch9972/pytorch-env/GluCoEnv/analysis/ppo_example.py --env adolescent#001 --n_env 16 --d_env cpu --d_agent cuda:0 --folder_id cpucuda0
+python3 /scratch/ny83/ch9972/pytorch-env/GluCoEnv/analysis/nci/ppo_example.py --env adolescent#001 --n_env 16 --d_env cpu --d_agent cuda:0 --folder_id cpucuda0
 wait
 
 
