@@ -6,15 +6,15 @@ build-backend = "flit_core.buildapi"
 name = "glucoenv"
 authors = [{name = "Chirath", email = "chirathyh@gmail.com"}]
 dependencies = [
-            'PyYAML==6.0.1',
-            'pandas==2.2.1',
-            'numpy==1.26.3',
-            'matplotlib==3.8.3',
-            'torch==2.2.0',
-            'torchaudio==2.2.0',
-            'torchvision==0.17.0',
-            'torchdiffeq==0.2.3',
-            'torchcubicspline @ git+https://github.com/patrick-kidger/torchcubicspline.git',
+#            'PyYAML==6.0.1',
+#            'pandas==2.2.1',
+#            'numpy==1.26.3',
+#            'matplotlib==3.8.3',
+#            'torch==2.2.0',
+#            'torchaudio==2.2.0',
+#            'torchvision==0.17.0',
+#            'torchdiffeq==0.2.3',
+#            'torchcubicspline @ git+https://github.com/patrick-kidger/torchcubicspline.git',
 ]
 dynamic = ["version", "description"]
 
