@@ -1,6 +1,6 @@
 [comment]: <> (# )
 <p align="center">
-<img src="https://raw.githubusercontent.com/chirathyh/chirathyh.github.io/main/images/glucoenv.png" alt="GluCoEnv" width="477"/>
+<img src="docs/glucoenv.png" alt="GluCoEnv" width="477"/>
 </p>
 
 <div align="center">
