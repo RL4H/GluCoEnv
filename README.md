@@ -173,7 +173,7 @@ RL-based systems, I have designed are hosted there, which provides you the abili
 ```
 @misc{hettiarachchi2022glucoenv,
      author={Hettiarachchi, Chirath},
-     title={GluCoEnv: A Glucose Control Simulator for Type 1 Diabetes v0. 1.0(2022)},
+     title={GluCoEnv: A Reinforcement Learning Environment for Glucose Control in Type 1 Diabetes v0. 1.0(2022)},
      year = {2022},
      publisher = {GitHub},
      journal = {GitHub repository},
